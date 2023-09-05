@@ -1,0 +1,42 @@
+//11.	Dado el peso P en gramos de una carta; haga un programa para calcular el costo de enviar la carta, 
+//de acuerdo a la siguiente tabla:
+//Si 	0  < P < 50		entonces costo Bs. 1.50
+//Si 	50 < P <= 100		entonces costo Bs. 4.00
+//Si 	100 < P <= 200		entonces costo Bs. 6.00
+//Si 	200 < P <= 350		entonces costo Bs. 10.50
+//Si 	350 < P <= 500 	entonces costo Bs. 15.00
+//Si 	P  > 500 		entonces mensaje 'NO PUEDE ENVIAR COMO CARTA'
+
+#include <iostream> 
+using namespace std; 
+int main ()
+{
+    float p; 
+    cout<<"Ingrese peso de la carta en gramos: ";
+    cin>>p;
+    if (p>0 && p<50)
+    {
+       cout<<"El costo es de 1.50bs";
+    }
+        else if (p>50 && p<=100) 
+        {
+            cout<<"El costo es de 4.00bs";
+        }
+            else if (p>100 && p<=200)  
+            {
+                cout<<"El costo es de 6.00bs";
+            }
+                else if (p>200 && p<=350)  
+                {
+                    cout<<"El costo es de 10.50bs";
+                }
+                    else if (p>350 && p<=500)
+                    {
+                        cout<<"El costo es de 15.00bs";
+                    }
+                        else if (p>500)
+                        {
+                             cout<<"No puede enviar como carta";
+                        }
+    return 0;
+}
