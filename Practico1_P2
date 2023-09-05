@@ -1,0 +1,24 @@
+// 2.	Calcular la circunferencia, el área y el volumen de una esfera, si se conoce como dato el diámetro D.
+
+#include <iostream> 
+using namespace std; 
+
+int main ()
+{
+    float pi,d,a,c,v,r;
+    
+        pi=3.1416;
+        cout<<"Ingrese el diametro: "<<endl;
+        cin>>d;
+        r=d/2;
+        c=2*pi*r;
+        a=4*pi*r*r;
+        v=1.33333333*pi*r*r*r;
+        cout<<"El radio es: "<<r<<endl;
+        cout<<"La circunferencia es: "<<c<<endl;
+        cout<<"El area es: "<<a<<endl;
+        cout<<"El volumen es: "<<v<<endl;
+        
+    return 0;
+}
+
