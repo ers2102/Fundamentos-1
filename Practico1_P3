@@ -1,0 +1,21 @@
+//Construir un algoritmo para calcular la nota de final de un alumno sabiendo que rindió 3 exámenes parciales 
+//ponderados como 40 puntos, un examen final de 40 puntos, un proyecto final de 20 puntos.  
+//La nota final es la suma de los tres conceptos.
+#include <iostream>
+using namespace std;
+int main()
+{ 
+    float p1,p2,p3,pf,ef,promedio,nf;
+    cout<<"Ingrese la nota de sus 3 parciales: "<<endl;
+    cin>>p1;
+    cin>>p2;
+    cin>>p3;
+    cout<<"Ingrese la nota de su examen final: "<<endl;
+    cin>>ef;
+    cout<<"Ingrese la nota de su proyecto final: "<<endl;
+    cin>>pf;
+    promedio=p1+p2+p3;
+    nf=promedio*0.4+ef*0.4+pf*0.20;
+    cout<<"Su nota final es: "<<nf;
+    return 0;
+} 
