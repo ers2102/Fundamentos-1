@@ -1,0 +1,30 @@
+// ejercicio serie.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int N, M;
+    float suma=0, promedio;
+    //pedir y validar valores
+    do 
+    {
+        cout << "INGRESE EL VALOR DE N: ";
+        cin >> N;
+    } while (N < 0);
+    do
+    {
+     cout << "INGRESE EL VALOR DE M: ";
+      cin >> M;
+    } while (M < N);
+    // un ciclo for 
+    for (int i = N; i <= M; i++) //inicializacion, condicion, incremento
+        suma = suma + i;
+    cout << "LA SUMA ES: " << suma << endl;
+    promedio = suma / (M - N + 1);
+    cout << "EL PROMEDIO ES: " << promedio;
+
+    //mostrar los resultados 
+
+}
