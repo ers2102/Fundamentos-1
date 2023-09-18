@@ -1,0 +1,31 @@
+//Calcular la siguiente serie:
+//S = X / 1!- X ^ 2 / 2!+ X ^ 3 / 3!- ........(+/ -)X ^ n / n!
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() 
+{
+    double x;
+    int n;
+
+    cout << "Ingrese el valor de x: ";
+    cin >> x;
+
+    cout << "Ingrese el numero de terminos (n): ";
+    cin >> n;
+
+    double resultado = 0;
+    double termino = 1;
+
+    for (int i = 1; i <= n; i++) {
+        termino *=  (x / i)*-1;
+        resultado += termino;
+    }
+
+    cout << "El resultado de la serie es: " << resultado <<endl;
+
+    return 0;
+}
