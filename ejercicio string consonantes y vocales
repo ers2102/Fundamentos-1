@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cctype>
+#include <string> // Biblioteca string
+
+using namespace std;
+
+int main() {
+    string frase; // Usando la clase string para almacenar la frase
+    cout << "Ingresa una frase: ";
+    getline(cin, frase);
+
+    int numVocales = 0;
+    int numConsonantes = 0;
+
+    for (char caracter : frase) {
+        caracter = tolower(caracter);
+
+        if (isalpha(caracter)) {
+            if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
+                numVocales++;
+            }
+            else {
+                numConsonantes++;
+            }
+        }
+    }
+
+    cout << "Numero de vocales: " << numVocales << endl;
+    cout << "Numero de consonantes: " << numConsonantes << endl;
+
+    return 0;
+}
